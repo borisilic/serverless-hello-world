@@ -33,5 +33,5 @@ functions:
     handler: handler.hello
     events:
       - http:
-          path: hello
+          path: hello-updated
           method: post
