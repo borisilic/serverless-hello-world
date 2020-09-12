@@ -25,7 +25,7 @@ provider:
   runtime: nodejs12.x
 
 # you can overwrite defaults here
-  stage: ${env:stage}
+  stage: ${env:ENVIRONMENT}
   region: ap-southeast-2
 
 functions:
