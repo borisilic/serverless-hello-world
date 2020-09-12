@@ -25,7 +25,7 @@ provider:
   runtime: nodejs12.x
 
 # you can overwrite defaults here
-  stage: dev
+  stage: ${env:ENVIRONMENT}
   region: ap-southeast-2
 
 functions:
@@ -33,5 +33,5 @@ functions:
     handler: handler.hello
     events:
       - http:
-          path: hello
+          path: hello-updated
           method: post
