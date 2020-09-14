@@ -40,12 +40,12 @@ jobs:
           npm i
           npm run build:prod
       - name: serverless deploy
-        working-directory: angular-serverless
+        working-directory: ./angular-serverless
         uses: serverless/github-action@master
         with:
           args: deploy
       - name: serverless sync with s3
-        working-directory: angular-serverless
+        working-directory: ./angular-serverless
         uses: serverless/github-action@master
         with:
           args: syncToS3
