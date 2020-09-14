@@ -34,7 +34,7 @@ plugins:
 
 custom:
   s3Bucket: au.com.boris.angular-serverless-example-${env:ENVIRONMENT}
-  distFolder: angular-serverless/dist/angular-serverless
+  distFolder: dist/angular-serverless
 
 functions:
   hello:
