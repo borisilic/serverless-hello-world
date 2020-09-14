@@ -39,7 +39,6 @@ jobs:
           cd angular-serverless
           npm i
           npm run build:prod
-          cd ..
       - name: serverless deploy
         uses: serverless/github-action@master
         with:
