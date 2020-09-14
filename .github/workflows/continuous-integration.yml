@@ -40,6 +40,8 @@ jobs:
           npm i
           npm run build:prod
       - name: serverless deploy
+        run:
+          cd angular-serverless
         uses: serverless/github-action@master
         with:
           args: deploy
